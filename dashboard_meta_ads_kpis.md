@@ -191,7 +191,7 @@ streamlit run app.py
 ### Deploy gratis (Streamlit Community Cloud)
 1. Sube este repo a GitHub (idealmente público).
 2. Entra a https://share.streamlit.io
-3. Crea una nueva app apuntando al archivo `app.py`.
+3. Crea una nueva app apuntando al archivo `app.py` (o usa la URL GitHub directa al `.py`: `https://github.com/<username>/<repo>/blob/<branch>/app.py`).
 4. Publica y comparte la URL final `https://tu-app.streamlit.app`.
 
 ### Solución rápida a `HTTP ERROR 401`

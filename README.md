@@ -1,13 +1,19 @@
 # Meta Ads + Orgánico Dashboard (Streamlit)
 
-## Qué poner en **Main file path** en Streamlit Cloud
-Usa exactamente:
+## Qué poner en el campo de archivo en Streamlit Cloud
+Según la pantalla de Streamlit Cloud, te puede pedir una de estas 2 opciones:
 
+1. **Main file path** (solo ruta):
 ```text
 app.py
 ```
 
-> No pongas rutas de archivos Markdown (`.md`), CSV (`.csv`) o carpetas.
+2. **URL de GitHub al archivo Python**:
+```text
+https://github.com/<username>/<repo>/blob/<branch>/app.py
+```
+
+> No pongas rutas de archivos Markdown (`.md`) o CSV (`.csv`). Debe apuntar a un archivo `.py`.
 
 ## Error: `This file is not a valid Python script`
 Si aparece ese error, normalmente es por una de estas causas:
@@ -23,7 +29,7 @@ Si aparece ese error, normalmente es por una de estas causas:
 ## Configuración correcta en Streamlit Cloud
 - **Repository**: tu repo
 - **Branch**: la rama donde está `app.py` (ej. `main`)
-- **Main file path**: `app.py`
+- **Main file path**: `app.py` o URL GitHub al `.py`
 - **Python version**: 3.11 (recomendado)
 
 ## Ejecutar local

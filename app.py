@@ -125,7 +125,7 @@ st.markdown(
     """
 1. Haz fork o sube este repo a GitHub (idealmente público).
 2. Ve a [share.streamlit.io](https://share.streamlit.io) y conecta tu GitHub.
-3. Selecciona el repo, branch y archivo principal `app.py`.
+3. Selecciona el repo, branch y archivo principal `app.py` (o pega la URL GitHub del `.py`: `https://github.com/<username>/<repo>/blob/<branch>/app.py`).
 4. Haz click en **Deploy**.
 5. Abre y comparte la URL final de la app con formato `https://tu-app.streamlit.app` (no compartas la URL de `share.streamlit.io`).
 
