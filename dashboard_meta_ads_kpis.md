@@ -176,3 +176,32 @@ ORDER BY 1,2;
 
 ## 11) Recomendación final
 Para clientes que combinan crecimiento orgánico + paid, prioriza siempre métricas **blended** (MER, CAC blended, payback total) para decisiones de presupuesto, y usa ROAS de plataforma como señal táctica, no como única verdad.
+
+---
+
+## 12) Deploy rápido para mostrarlo al cliente
+Si quieres **ver una versión funcional hoy mismo**, usa el archivo `app.py` de este repo:
+
+### Ejecutar local
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+### Deploy gratis (Streamlit Community Cloud)
+1. Sube este repo a GitHub.
+2. Entra a https://share.streamlit.io
+3. Crea una nueva app apuntando al archivo `app.py`.
+4. Publica y comparte la URL.
+
+### Estructura de datos esperada (CSV)
+Columnas mínimas:
+- `date`
+- `channel_group` (ej: `paid_meta`, `organic_social`)
+- `spend`
+- `sessions`
+- `purchases`
+- `revenue`
+- `new_customers`
+
+Puedes iniciar con `data/sample_marketing_daily.csv` y luego reemplazar por tu data real.
