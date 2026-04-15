@@ -123,11 +123,16 @@ st.markdown("---")
 st.subheader("Cómo hacer deploy")
 st.markdown(
     """
-1. Haz fork o sube este repo a GitHub.
+1. Haz fork o sube este repo a GitHub (idealmente público).
 2. Ve a [share.streamlit.io](https://share.streamlit.io) y conecta tu GitHub.
 3. Selecciona el repo, branch y archivo principal `app.py`.
 4. Haz click en **Deploy**.
-5. Comparte la URL pública con tu cliente.
+5. Abre y comparte la URL final de la app con formato `https://tu-app.streamlit.app` (no compartas la URL de `share.streamlit.io`).
+
+Si ves **HTTP ERROR 401**:
+- Revisa que estés usando la URL `*.streamlit.app` de la app desplegada.
+- Si el repo/app está privado, habilita acceso público o agrega usuarios autorizados en Streamlit Cloud.
+- Revisa que no exista un proxy corporativo bloqueando la sesión.
 
 También puedes correrlo local:
 ```bash
